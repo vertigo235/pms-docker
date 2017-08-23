@@ -45,7 +45,7 @@ ENV CHANGE_CONFIG_DIR_OWNERSHIP="true" \
     HOME="/config"
 
 ARG TAG=plexpass
-ARG URL=
+ARG URL=https://downloads.plex.tv/plex-media-server/1.8.1.4140-82ea538ca/plexmediaserver_1.8.1.4140-82ea538ca_amd64.deb
 
 COPY root/ /
 
