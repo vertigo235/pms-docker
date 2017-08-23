@@ -4,8 +4,13 @@
 if [ "${DEBUG,,}" = "true" ]; then
   set -x
 fi
+URL=https://downloads.plex.tv/plex-media-server/1.8.1.4140-82ea538ca/plexmediaserver_1.8.1.4140-82ea538ca_amd64.deb
 
 . /plex-common.sh
+
+echo "Attempting to install from URL: ${URL}"
+installFromRawUrl "${URL}"
+exit 0 
 
 function getPref {
   local key="$1"
