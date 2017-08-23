@@ -1,4 +1,8 @@
-# Official Docker container for Plex Media Server
+# Un-Official Docker container for Plex Media Server (For testing the Plex HW Transcode Preview)
+
+# HW preview specific docker command
+
+Must include "--device /dev/dri:/dev/dri \" to allow docker access to GPU drivers. 
 
 # plexinc/pms-docker
 
@@ -30,6 +34,7 @@ docker run \
 -v <path/to/plex/database>:/config \
 -v <path/to/transcode/temp>:/transcode \
 -v <path/to/media>:/data \
+--device /dev/dri:/dev/dri \
 plexinc/pms-docker
 ```
 
@@ -47,6 +52,7 @@ docker run \
 -v <path/to/plex/database>:/config \
 -v <path/to/transcode/temp>:/transcode \
 -v <path/to/media>:/data \
+--device /dev/dri:/dev/dri \
 plexinc/pms-docker
 ```
 
