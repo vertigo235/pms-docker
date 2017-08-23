@@ -49,7 +49,7 @@ ARG URL=https://downloads.plex.tv/plex-media-server/1.8.1.4140-82ea538ca/plexmed
 
 COPY root/ /
 
-RUN \
+# RUN \
 # Save version and install
 #   /installBinary.sh
 
